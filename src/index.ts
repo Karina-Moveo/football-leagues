@@ -1,12 +1,13 @@
-import * as _ from 'lodash';
+import * as _ from 'lodash'
+import '../public/static/css/style.scss'
 import { getLeaguesNames } from "./services/leagues"
 
 const createTabs: any = async () => {
     const leagueNames = await getLeaguesNames()
     const tabs = document.createElement('div')
-    tabs.className = "tabs-container"
-
+    
     const tabList = document.createElement('ul') 
+    tabList.classList.add('tabs')
     
     leagueNames.forEach(element => {
         const listItem = document.createElement('li')
