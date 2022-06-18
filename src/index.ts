@@ -1,11 +1,8 @@
-//  function component() {
-//    const element = document.createElement('div');
+import { getFiveLeagues } from "./services/leagues"
 
-//    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+const displayLeagues = async () => {
+    const text = await getFiveLeagues()
+    console.log(text)
+}
 
-//    return element;
-//  }
-
-//  document.body.appendChild(component());
-alert("you got typed")
-alert("And again")
+displayLeagues()
