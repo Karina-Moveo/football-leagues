@@ -3,10 +3,12 @@
       "outDir": "../public/static/bundle/",
       "sourceMap": true,
       "noImplicitAny": true,
-      "module": "es6",
+      "module": "esnext",
       "target": "es5",
       "jsx": "react",
       "allowJs": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports" : true,
+      "esModuleInterop" : true
     }
   }

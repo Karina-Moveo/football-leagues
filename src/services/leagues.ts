@@ -1,6 +1,6 @@
 const theSportsDB = require('thesportsdb');
 
-export const getFiveLeagues = async (): Promise<any> => {
+export const getLeaguesNames = async (): Promise<Array<string>> => {
     let leagueNames: Array<string> = []
     theSportsDB.setApiKey(2)
     const leagues = await theSportsDB.getLeagueListByCountry("Brazil", "Soccer")
@@ -8,6 +8,5 @@ export const getFiveLeagues = async (): Promise<any> => {
         leagueNames.push(element.strLeague)
     });
     return leagueNames
- 
 }
 
