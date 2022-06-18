@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
   "devDependencies": {
     "@types/lodash": "^4.14.182",
     "ts-loader": "^9.3.0",
