@@ -7,10 +7,5 @@
 //  }
 
 //  document.body.appendChild(component());
-const world = 'world';
-
-export function hello(who: string = world): string {
-  return `Hello ${who}! `;
-}
-
-hello()
+alert("you got typed")
+alert("And again")
