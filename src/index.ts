@@ -1,6 +1,6 @@
 import * as _ from 'lodash'
 import '../public/static/css/style.scss'
-import { Iteam, getLeaguesNames, getTeamsInLeague } from "./services/leagues"
+import { Iteam, getLeaguesNames, getTeamsInLeague } from "./services"
 
 const createTabs: any = async () => {
     const leagueNames = await getLeaguesNames()
